@@ -10,6 +10,7 @@ import { LayoutDashboard } from 'lucide-react'
 import TitleForm from './_components/TitleForm'
 import DescriptionForm from './_components/DescriptionForm'
 import ImageForm from './_components/ImageForm'
+import CategoryForm from './_components/CategoryForm'
 
 const CourseIdPage = async ({
   params
@@ -32,7 +33,7 @@ const CourseIdPage = async ({
 
   const categories = await db.category.findMany({
     orderBy: {
-      name: 'asc'
+      name: 'asc',
     },
   })
 
@@ -91,6 +92,14 @@ const CourseIdPage = async ({
           <ImageForm
             initialData={course}
             courseId={course.id}
+          />
+          <CategoryForm
+            initialData={course}
+            courseId={course.id}
+            options={categories.map((category) => ({
+              label: category.name,
+              value: category.id,
+            }))}
           />
         </div>
       </div>
