@@ -68,7 +68,7 @@ const CourseIdPage = async ({
 		course.imageUrl,
 		course.price,
 		course.categoryId,
-    course.chapters.some(chapter => chapter.ispublished)
+    course.chapters.some(chapter => chapter.isPublished)
 	]
 
 	const totalFields = requiredFields.length
