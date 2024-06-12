@@ -100,6 +100,7 @@ const ChapterTitleForm = ({
                       disabled={isSubmitting}
                       placeholder="E.g. 'Introduction to the course'"
                       {...field}
+                      autoFocus
                     />
                   </FormControl>
                   <FormMessage />

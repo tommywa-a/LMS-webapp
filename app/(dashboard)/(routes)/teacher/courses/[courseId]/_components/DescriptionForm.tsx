@@ -103,6 +103,7 @@ const DescriptionForm = ({
                 <FormItem>
                   <FormControl>
                     <Textarea
+                      autoFocus={isEditing}
                       disabled={isSubmitting}
                       placeholder="E.g. 'This course is about...'"
                       {...field}

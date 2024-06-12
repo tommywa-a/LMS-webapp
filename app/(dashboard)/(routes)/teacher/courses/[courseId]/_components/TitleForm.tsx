@@ -100,6 +100,7 @@ const TitleForm = ({
                       disabled={isSubmitting}
                       placeholder="E.g. 'Advanced Web Development'"
                       {...field}
+                      autoFocus
                     />
                   </FormControl>
                   <FormMessage />
