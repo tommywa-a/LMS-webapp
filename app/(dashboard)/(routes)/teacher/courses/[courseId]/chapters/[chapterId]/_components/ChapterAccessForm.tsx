@@ -93,7 +93,7 @@ const ChapterAccessForm = ({
         )}>
           {initialData.isFree ? (
             <>
-              <CheckCircle className='w-4 h-4 mr-2 bg-green-300 rounded-md' />
+              <CheckCircle className='w-4 h-4 mr-2 text-emerald-500 rounded-md' />
               This chapter is free for preview.
             </>
           ) : (
