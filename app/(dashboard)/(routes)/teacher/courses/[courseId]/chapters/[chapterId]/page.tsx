@@ -56,6 +56,12 @@ const ChapterIdPage = async ({
 				label="This chapter has not been published yet. It will not be visible in the course until it has been published."
 			/>
 		)}
+		{chapter.isPublished && (
+			<Banner
+				variant="success"
+				label="This CHAPTER is published."
+			/>
+		)}
 		<div className='p-6'>
 			<div className='flex items-center justify-between'>
 				<div className='w-full'>
