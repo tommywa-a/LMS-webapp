@@ -56,6 +56,7 @@ const Actions = ({
       toast.success("Course deleted successfully")
       router.refresh()
       router.push(`/teacher/courses`)
+      router.refresh()
 
     } catch {
       toast.error("Something went wrong")
