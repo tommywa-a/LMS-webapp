@@ -26,6 +26,7 @@ const SidebarItem = ({
   
   const onCLick = () => {
     router.push(href)
+    router.refresh()
   }
 
   return (
