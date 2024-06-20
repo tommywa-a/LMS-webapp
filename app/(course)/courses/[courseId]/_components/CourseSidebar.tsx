@@ -32,7 +32,13 @@ const CourseSidebar = async ({
   })
 
   return (
-    <div>CourseSidebar</div>
+    <div className="h-full border-r flex flex-col overflow-y-auto shadow-sm">
+      <div>
+        <h1>
+          {course.title}
+        </h1>
+      </div>
+    </div>
   )
 }
 
