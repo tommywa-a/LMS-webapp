@@ -57,6 +57,7 @@ const VideoPlayer = ({
       autoPlay
       playbackId={playbackId}
       />
+    )}
     </div>
   )
 }
