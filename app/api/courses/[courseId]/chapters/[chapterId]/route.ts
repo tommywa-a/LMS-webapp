@@ -154,9 +154,10 @@ export async function PATCH(
         playbackId: asset.playback_ids?.[0]?.id ?? "",
       }
     })
-
-    return NextResponse.json(chapter);
   }
+
+  return NextResponse.json(chapter);
+  
   } catch (error) {
     console.log("[COURSES_CHAPTER_ID]", error);
     return new NextResponse("Internal Server Error", { status: 500 });
