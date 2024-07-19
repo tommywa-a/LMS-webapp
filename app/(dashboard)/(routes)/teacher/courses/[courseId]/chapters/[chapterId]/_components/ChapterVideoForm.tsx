@@ -94,7 +94,8 @@ const ChapterVideoForm = ({
             }}
           />
           <div className='text-xs text-muted-foreground mt-4'>
-            Upload this chapter&apos;s video
+            <p>Upload this chapter&apos;s video.</p>
+            <p className='text-emerald-500 font-bold'>Please, don&apos;t forget to click on &quot;Upload 1 file&quot; after selecting your video.</p>
           </div>
         </div>
       )}
