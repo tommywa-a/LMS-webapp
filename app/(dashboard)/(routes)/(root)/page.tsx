@@ -1,7 +1,7 @@
 import { getDashboardCourses } from "@/actions/get-dashboard-courses"
 import CoursesList from "@/components/CoursesList"
 import { auth } from "@clerk/nextjs/server"
-import { Clock } from "lucide-react"
+import { CheckCircle, Clock } from "lucide-react"
 import { redirect } from "next/navigation"
 import InfoCard from "./_components/InfoCard"
 
@@ -24,6 +24,12 @@ export default async function Dashboard() {
         icon={Clock}
         label="In Progress"
         numberOfItems={coursesInProgress.length}
+       />
+       <InfoCard
+        icon={CheckCircle}
+        label="Completed"
+        numberOfItems={completedCourses.length}
+        variant="success"
        />
       </div>
       <CoursesList
