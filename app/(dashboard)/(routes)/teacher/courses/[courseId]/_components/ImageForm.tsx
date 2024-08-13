@@ -96,7 +96,8 @@ const ImageForm = ({
             }}
           />
           <div className='text-xs text-muted-foreground mt-4'>
-            16:9 aspect ratio recommended
+            <p>16:9 aspect ratio recommended</p>
+            <p className='text-emerald-500 font-bold'>Please, don&apos;t forget to click on &quot;Upload 1 file&quot; after selecting your image.</p>
           </div>
         </div>
       )}
