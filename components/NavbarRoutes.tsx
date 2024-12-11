@@ -34,7 +34,7 @@ const NavbarRoutes = () => {
 							variant={"ghost"}
 						>
 							<LogOut className='h-4 w-4 mr-2' />
-							Exit
+							Exit Teacher Mode
 						</Button>
 					</Link>
 				) : isTeacher(userId) ? (
