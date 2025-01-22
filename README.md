@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LMS Web Application
 
-## Getting Started
+A web-based **Learning Management System (LMS)** that allows educators to create courses, manage student enrollments, and deliver content efficiently.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Environment Variables](#environment-variables)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Features
+
+- **User Authentication**: Secure login and registration for students and instructors.
+- **Course Management**: Create, update, and delete courses.
+- **Student Enrollment**: Enroll students in courses and manage their progress.
+- **Content Delivery**: Upload and manage course materials.
+- **Interactive Dashboard**: Track student performance and engagement.
+
+## Technologies Used
+
+- **Frontend**: Next.js (React framework)
+- **Backend**: Next.js API Routes (Node.js)
+- **Database**: Prisma ORM (PostgreSQL, MySQL, or SQLite)
+- **Styling**: Tailwind CSS
+
+## Installation
+
+### Prerequisites
+
+- **Node.js** (Download from [nodejs.org](https://nodejs.org/))
+- **Package Manager**: npm, yarn, or pnpm
+- **Database**: PostgreSQL, MySQL, or SQLite
+
+### Steps
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/tommywa-a/LMS-webapp.git
+   cd LMS-webapp
+   ```
+2. Install dependencies:
+   ```sh
+   npm install  # or yarn install or pnpm install
+   ```
+3. Set up the database and environment variables (see below).
+4. Run database migrations (if applicable):
+   ```sh
+   npx prisma migrate dev
+   ```
+5. Start the development server:
+   ```sh
+   npm run dev  # or yarn dev or pnpm dev
+   ```
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Usage
+
+- **Sign up** as an instructor or student.
+- **Create courses** (Instructor only).
+- **Enroll in courses** (Student only).
+- **Manage learning materials and track progress.**
+
+## Environment Variables
+
+Create a `.env` file in the root directory and add the following:
+
+```sh
+DATABASE_URL=your_database_connection_string
+NEXTAUTH_SECRET=your_auth_secret
+NEXTAUTH_URL=http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API Documentation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Method | Endpoint       | Description         |
+| ------ | -------------- | ------------------- |
+| GET    | `/api/courses` | Fetch all courses   |
+| POST   | `/api/courses` | Create a new course |
+| GET    | `/api/users`   | Fetch user data     |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+Contributions are welcome! Please follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit changes with clear messages.
+4. Submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the **MIT License**.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For any inquiries, reach out via email: **[tomiwa.aderibigbe1@gmail.com](mailto:tomiwa.aderibigbe1@gmail.com)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Happy Coding! 🚀
