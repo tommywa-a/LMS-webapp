@@ -1,5 +1,6 @@
 # LMS Web Application
 
+
 A web-based **Learning Management System (LMS)** that allows educators to create courses, manage student enrollments, and deliver content efficiently.
 
 ## Table of Contents
