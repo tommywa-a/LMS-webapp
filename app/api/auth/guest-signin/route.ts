@@ -9,7 +9,7 @@ export async function POST() {
 	try {
 		// Generate a unique identifier for the guest
 		const now = new Date();
-const pad = (n) => n.toString().padStart(2, '0');
+const pad = (n: number) => n.toString().padStart(2, '0');
 
 // Timestamp: YYYYMMDD_HHMMSS
 const timestamp = 
